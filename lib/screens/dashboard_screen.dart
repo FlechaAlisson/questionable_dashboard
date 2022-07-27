@@ -139,7 +139,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       Color.fromARGB(255, 234, 171, 188),
     ];
 
-    for (var i = 0; i < listAnswer.length - 1; i++) {
+    for (var i = 0; i < listAnswer.length; i++) {
       list.add(Indicator(
         color: listColor[i],
         text: listAnswer[i].answer ?? '',

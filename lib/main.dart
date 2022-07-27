@@ -21,7 +21,14 @@ void main() {
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(color: AppColors.primary),
             ),
+            errorBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: AppColors.delete),
+            ),
+            focusedErrorBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: AppColors.delete),
+            ),
             floatingLabelStyle: TextStyle(color: AppColors.primary),
+            errorStyle: TextStyle(color: AppColors.delete),
             focusColor: AppColors.primary,
             iconColor: AppColors.primary,
             fillColor: AppColors.primary,
