@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  flutter:
+    restart: unless-stopped
+    build: flutter_service
+    ports:
+      - 3002:5000
+    environment:
+      PORT: 5000
+      TZ: America/Sao_Paulo
+    logging:
+      driver: "json-file"
+      options:
+        max-size: 10m
+        max-file: "1"
+        labels: "production_status"
+        env: "os"
