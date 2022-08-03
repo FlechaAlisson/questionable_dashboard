@@ -92,7 +92,9 @@ class _PieChart2State extends State<PieChartSample2> {
     return PieChartSectionData(
       color: color,
       value: value,
-      title: value?.toStringAsFixed(2),
+      title: value == value?.round()
+          ? value.toString()
+          : value?.toStringAsFixed(2),
       radius: radius,
       titleStyle: TextStyle(
         fontSize: fontSize,

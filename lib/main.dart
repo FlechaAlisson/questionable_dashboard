@@ -11,7 +11,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => FormController()),
       ],
       child: MaterialApp(
-        debugShowMaterialGrid: false,
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primaryColor: AppColors.primary,
           inputDecorationTheme: const InputDecorationTheme(

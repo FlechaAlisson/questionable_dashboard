@@ -111,6 +111,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget _gridCharts(BuildContext context) {
     FormController form = Provider.of<FormController>(context);
 
+    if (form.forms.isEmpty) {
+      return const Center(
+          child: CircularProgressIndicator(
+        color: AppColors.primary,
+      ));
+    }
+
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 500, crossAxisSpacing: 30, mainAxisSpacing: 30),
