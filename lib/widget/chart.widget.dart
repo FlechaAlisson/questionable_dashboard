@@ -93,8 +93,8 @@ class _PieChart2State extends State<PieChartSample2> {
       color: color,
       value: value,
       title: value == value?.round()
-          ? value.toString()
-          : value?.toStringAsFixed(2),
+          ? '${value.toString()}%'
+          : '${value?.toStringAsFixed(2)}%',
       radius: radius,
       titleStyle: TextStyle(
         fontSize: fontSize,
